@@ -17,8 +17,26 @@
             <button type="button" onclick="randomize();" class="btn btn-outline-success btn-lg">Generate</button>
             <div id="ticketdiv" style="display: none;">
                 <br>
+                <div class="d-flex flex-row justify-content-evenly">
+                    <div class="border border-dark rounded p-2 w-25">
+                        <p>First Number</p>
+                        <p class="border-top border-dark pt-3" id="num1">0</p>
+                    </div>
+                    <div class="border border-dark rounded p-2 w-25">
+                        <p>Second Number</p>
+                        <p class="border-top border-dark pt-3" id="num2">0</p>
+                    </div>
+                    <div class="border border-dark rounded p-2 w-25">
+                        <p>Third Number</p>
+                        <p class="border-top border-dark pt-3" id="num3">0</p>
+                    </div>
+                </div>
+                <br>
                 <p>Your ticket number is:</p>
                 <p class="h1" id="ticketnum">A0</p>
+                <br>
+                <p id="waittime">Your ticket will be resolved in 0 hr 0 min.</p>
+                <p>Thank you for your patience!</p>
             </div>
         </div>
     </div>
