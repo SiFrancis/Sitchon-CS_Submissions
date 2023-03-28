@@ -16,3 +16,5 @@ function forloop() {
     }
     document.getElementById("output").innerHTML = text3;
 }
+
+//dili nako ni gi google btw
