@@ -1,15 +1,18 @@
-body {
-    font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {font-family: 'Lato', sans-serif;}
+
+nav {background-color: #004aad;}
+
+nav img {width: 30%;}
+
+#navlinks a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    padding: 0 0.45rem;
 }
 
-nav {
-    background-color: #004aad;
-    width: 100vw;
-}
+article {margin-top: 10%;}
 
-nav > img {
-    width: 25%;
-    padding: 5px;
-}
+article > div {width: 40%;}
