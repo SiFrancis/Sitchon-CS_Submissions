@@ -8,11 +8,12 @@ nav img {width: 30%;}
 
 #navlinks a {
     color: white;
-    font-size: large;
     text-decoration: none;
-    padding: 0 0.45rem;
+    padding: 0 0.5rem;
 }
 
 article {margin-top: 10%;}
 
 article > div {width: 40%;}
+
+h1 {color: #004aad;}

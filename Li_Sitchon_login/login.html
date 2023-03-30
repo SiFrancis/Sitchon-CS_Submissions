@@ -10,22 +10,30 @@
 </head>
 <body>
     <nav class="d-flex align-items-center justify-content-between">
-        <img src="logo(1).jpg" alt="logo(1).jpg" class="ms-3">
-        <div id="navlinks" class="me-4">
+        <img src="logo(2).jpg" alt="logo(1).jpg" class="m-3">
+        <div id="navlinks" class="me-4 fs-5">
             <a href="#">Topics</a>
             <a href="#">Popular Posts</a>
             <a href="#"><b>Log In</b></a>
         </div>
     </nav>
    
-   <article class="d-flex align-items-center">
+   <article class="d-flex align-items-center justify-content-evenly">
        <div class="m-5 text-center">
-           <h1><b>LOG IN</b></h1>
+           <h1><b>JOIN THE DISCUSSION</b></h1>
            <p>Log in to access the HyperLink Forums. The forums are a place for HyperLink members to chat, socialize, coordinate, and share their ideas for a more connected future.</p>
        </div>
        <div class="card">
            <div class="card-body">
-               <p>login stuff here</p>
+             <form>
+                <label for="username" class="form-label">Username</label>
+                <span class="text-danger">*</span>
+                <input type="text" name="username" id="username" class="form-control mb-4">
+                <label for="password" class="form-label">Password</label>
+                <span class="text-danger">*</span>
+                <input type="password" name="password" id="password" class="form-control mb-4">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
            </div>
        </div>
    </article>
