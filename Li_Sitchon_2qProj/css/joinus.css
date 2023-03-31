@@ -1,0 +1,21 @@
+article > p {text-align: center;}
+
+.container {
+    margin: auto;
+    width: 70%;
+    /* border: 1px solid red; */
+}
+
+.text_block {
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+#right {float: right;}
+
+h2 {color: #004aad;}
+
+.icon {margin: 0 auto;}

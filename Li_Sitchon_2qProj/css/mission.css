@@ -1,0 +1,49 @@
+/* Styling for the h2 */
+h2 {
+	text-align: center;
+	color: #004aad;
+}
+
+/* Styling for the Three Goals divs */
+.goal {
+	width: 80%;
+	height: 214px;
+	margin: auto;
+	background-color: #004aad;
+	/* For some reason the divs stick together if i add a border but not if i remove them
+	I dont know how it works but it works and I dont have enough time to find another solution */
+	border: 1px solid #004aad;
+}
+
+/* Adjusting the h3 (the heading for each goal) */
+.goal h3 {
+	padding-left: 15px;
+	font-size: 20pt;
+	color: white;
+	margin-bottom: auto;
+}
+
+/* Adjusting the text */
+.goal p {
+	padding-left: 15px;
+	width: 60%;
+	margin: 0px;
+	color: white;
+}
+
+/* Floating the images to the right */
+.goal img {
+	float: right;
+	margin: 0 ;
+	opacity: 60%;
+}
+
+/* Changing the colors of the middle goal div  */
+#white {
+	background-color: white;
+	border: 1px solid white;
+}
+
+#white h3 {color: #004aad;}
+
+#white p {color: #004aad;}

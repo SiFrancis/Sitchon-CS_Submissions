@@ -1,0 +1,155 @@
+/* this file will serve as the basic template for each page
+this does mean that each page will have two CSS files; this and the file with style rules for that specific page*/
+
+/* Importing a font from google (not the one i used in the Canva wireframe even though its nice, because its paid) */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Adding the custom font and disabling horizontal scroll (the fullwidth footer adds a scrollbar to the bottom) */
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    /* Set margin to 0 so the fullwidth stuff can cover the whole screen */
+    margin: 0;
+}
+
+/* Allows the nav links to float beside the logo image */
+nav {float: right;}
+
+/* Set logo image width */
+#logo img {width: 30%;}
+
+/* Styling for the nav links */
+nav>ul {
+    list-style-type: none;
+    margin-top: 5%;
+    padding: 0;
+}
+
+/* Allows the nav links to float beside each other */
+nav li {float: left;}
+
+/* A bunch of styling for links */
+a {
+    text-decoration: none;
+    color: #004aad;
+    transition: 0.2s ease;
+}
+
+/* on hover effect */
+a:hover {color: #38b6ff;}
+
+/* Styling specific for nav links */
+nav a {
+    font-size: 14pt;
+    display: block;
+    padding: 8px 12px;
+}
+
+/* Made an HTML class for the nav link of the current page so it would be bolded */
+.active {
+    font-weight: bold;
+}
+
+/* this will be used for the page titles like Our Mission, Our History, etc. so I thought it best to put it here */
+h1 {
+    font-size: 30pt;
+    text-align: center;
+    color: #004aad;
+}
+
+/* Formatting for article text */
+article p {
+    font-size: 14pt;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: auto;
+    margin: 0 15%;
+}
+
+/* the footer itself */
+footer {
+    text-align: center;
+    width: 100vw;
+    overflow: hidden;
+    color: white;
+    background-color: #004aad;
+}
+
+/* Styling for the footer links (about me & references) */
+.footerlink {
+    color: white;
+    text-decoration: underline;
+}
+
+.footerlink:hover {color: white;}
+
+/* Styling for the list items */
+#socmed li {
+    margin: 5px 20px 20px 20px;
+    padding: 0;
+    list-style: none;
+    top: 0;
+}
+
+/* some more styling */
+#socmed li, #socmed a {
+    position: relative;
+    left: 34vw;
+    width: 60px;
+    float: left;
+    display: block;
+    transform: scale(0.75);
+    transition: 0.4s ease;
+}
+
+/* Styling for the icons/image sprites */
+#fb {
+    background: url('../images/SOCIAL-ICONS.png') no-repeat -246px -20px;
+    width: 59px;
+    height: 58px;
+}
+
+#fb:hover {
+    background: url('../images/SOCIAL-ICONS.png') no-repeat -246px -122px;
+    width: 60px;
+    height: 58px;
+    transform: scale(0.95);
+}
+
+#twt {
+    background: url('../images/SOCIAL-ICONS.png') no-repeat -632px -21px;
+    width: 58px;
+    height: 58px;
+}
+
+#twt:hover {
+    background: url('../images/SOCIAL-ICONS.png') no-repeat -632px -117px;
+    width: 60px;
+    height: 58px;
+    transform: scale(0.9);
+}
+
+#insta {
+    background: url('../images/SOCIAL-ICONS.png') no-repeat -727px -21px;
+    width: 58px;
+    height: 58px;
+}
+
+#insta:hover {
+    background: url('../images/SOCIAL-ICONS.png') no-repeat -727px -117px;
+    width: 60px;
+    height: 58px;
+    transform: scale(0.9);
+}
+
+#linkedin {
+    background: url('../images/SOCIAL-ICONS.png') no-repeat -535px -21px;
+    width: 59px;
+    height: 58px;
+}
+
+#linkedin:hover {
+    background: url('../images/SOCIAL-ICONS.png') no-repeat -535px -118px;
+    width: 60px;
+    height: 58px;
+}

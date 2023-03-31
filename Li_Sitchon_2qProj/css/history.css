@@ -1,0 +1,35 @@
+/* Float the picture to the side */
+#founder_pic {
+	float: left;
+	width: 25%;
+	margin: 20px;
+}
+
+/* Center the project paragraphs and adjust width */
+.proj {
+	width: 70%;
+	margin: auto;
+}
+
+/* Clearfix hack for floating elements, taken from w3schools */
+.proj::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Styling for the two images */
+.proj img {
+	margin: 0 20px 3%;
+	width: 23%;
+}
+
+#spy {float: left;}
+
+#ramirez {float: right;}
+
+/* Styling for the h2 of this page (the project names) */
+h2 {
+	text-align: center;
+	color: #004aad;
+}

@@ -1,0 +1,13 @@
+article img {
+    width: 25%;
+    float: left;
+    margin: 30px;
+}
+
+#hobbies {
+    font-size: 14pt;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: auto;
+    margin: 0 15%;
+}

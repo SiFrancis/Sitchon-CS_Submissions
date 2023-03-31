@@ -1,0 +1,55 @@
+/* Adding a background image to the big text */
+.title {
+	padding: 10px 0px;
+	background-image: url(../images/city_bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 101vw;
+}
+
+.title h1 {color: white;}
+
+/* Styling for the "We are here to change all of that" text */
+#emphasis {
+	text-align: center;
+	font-size: 18pt;
+}
+
+/* Styling for the links to the various pages */
+.bodylink {
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Styling for the text of the links, such as adjusting background and paddings */
+h2 {
+	padding: 30px 10px;
+	margin: 0 auto;
+	width: 90%;
+	color: white;
+	font-size: 25pt;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-clip: padding-box;
+	transition: 0.3s;
+}
+
+/* Cool hover effect I accidentally discovered */
+h2:hover {font-size: 30pt;}
+
+/* Linking the background images and adjusting borders */
+#missionlink {
+	background-image: url(../images/mission_bg.jpg);
+	margin-top: 5%;
+}
+
+#historylink {background-image: url(../images/history_bg.jpg);}
+
+#joinlink {background-image: url(../images/join_bg.jpg);}
+
+#contactlink {
+	background-image: url(../images/contact_bg.jpg);
+	margin-bottom: 5%;
+}
