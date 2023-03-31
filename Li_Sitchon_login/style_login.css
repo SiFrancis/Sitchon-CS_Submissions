@@ -1,23 +1,31 @@
+/* Importing and setting custom font */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {font-family: 'Lato', sans-serif;}
 
+/* Setting navbar color to match website color scheme */
 nav {background-color: #004aad;}
 
+/* Adjusting the logo since it's too big in its default size */
 .navbar-brand {width: 30%;}
 
 #logo {width: 100%;}
 
+/* Styling for navbar links */
 #navlinks a {
     color: white;
     text-decoration: none;
     padding: 0 0.5rem;
 }
 
+/* Separating main body from the navbar */
 article {margin-top: 10%;}
 
+/* making sure the description and login card 
+   can fit beside each other */
 article > div {width: 40%;}
 
+/* Changing text color to fit the color scheme */
 h1 {color: #004aad;}
 
 .dropdown-menu a:hover {
@@ -30,8 +38,12 @@ h1 {color: #004aad;}
     border-color: #004aad;
 }
 
+/* changing focus color of text inputs */
 input[type=text]:focus, input[type=password]:focus {background-color: azure;}
 
+/* i removed the text-decoration in bootstrap and
+   added it back in CSS since bootstrap text-decoration
+   can't change its color using :hover (i think)*/
 #forgot {
     color: slategray;
     text-decoration: underline slategray;
@@ -41,4 +53,93 @@ input[type=text]:focus, input[type=password]:focus {background-color: azure;}
     color: #004aad;
     text-decoration-color: #004aad;
     transition: 0.2s ease;
+}
+
+/* the footer itself; copied from 2nd quarter project,
+   I don't wanna bother redoing it in Bootstrap*/
+footer {
+    text-align: center;
+    width: 100vw;
+    overflow: hidden;
+    color: white;
+    background-color: #004aad;
+}
+
+/* Styling for the footer links (about me & references) */
+.footerlink {
+    color: white;
+    text-decoration: underline;
+}
+
+.footerlink:hover {color: white;}
+
+/* Styling for the list items */
+#socmed li {
+    margin: 5px 20px 20px 20px;
+    padding: 0;
+    list-style: none;
+    top: 0;
+}
+
+/* some more styling */
+#socmed li, #socmed a {
+    position: relative;
+    left: 34vw;
+    width: 60px;
+    float: left;
+    display: block;
+    transform: scale(0.75);
+    transition: 0.4s ease;
+}
+
+/* Styling for the icons/image sprites */
+#fb {
+    background: url('images/SOCIAL-ICONS.png') no-repeat -246px -20px;
+    width: 59px;
+    height: 58px;
+}
+
+#fb:hover {
+    background: url('images/SOCIAL-ICONS.png') no-repeat -246px -122px;
+    width: 60px;
+    height: 58px;
+    transform: scale(0.95);
+}
+
+#twt {
+    background: url('images/SOCIAL-ICONS.png') no-repeat -632px -21px;
+    width: 58px;
+    height: 58px;
+}
+
+#twt:hover {
+    background: url('images/SOCIAL-ICONS.png') no-repeat -632px -117px;
+    width: 60px;
+    height: 58px;
+    transform: scale(0.9);
+}
+
+#insta {
+    background: url('images/SOCIAL-ICONS.png') no-repeat -727px -21px;
+    width: 58px;
+    height: 58px;
+}
+
+#insta:hover {
+    background: url('images/SOCIAL-ICONS.png') no-repeat -727px -117px;
+    width: 60px;
+    height: 58px;
+    transform: scale(0.9);
+}
+
+#linkedin {
+    background: url('images/SOCIAL-ICONS.png') no-repeat -535px -21px;
+    width: 59px;
+    height: 58px;
+}
+
+#linkedin:hover {
+    background: url('images/SOCIAL-ICONS.png') no-repeat -535px -118px;
+    width: 60px;
+    height: 58px;
 }
