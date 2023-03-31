@@ -4,6 +4,10 @@ function submitLogin() {
     var needed = "";
     if ((formname == null || formname == "") || (formpass == null || formpass == "")) {
         document.getElementById("logincheck").style.display = "block";
+        console.log("Login error.")
+    } else {
+        document.getElementById("logincheck").style.display = "none";
+        document.getElementById("login_valid").style.display = "block";
     }
     if (formpass == null || formpass == "") {
         needed = "password";
@@ -18,5 +22,5 @@ function submitLogin() {
         }
     }
     
-    document.getElementById("logincheck").innerHTML = ("Please enter your " + needed + ".");
+    document.getElementById("logincheck").innerHTML = ("<i>Please enter your " + needed + ".</i>");
 }

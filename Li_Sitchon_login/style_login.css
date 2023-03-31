@@ -21,6 +21,7 @@ article > div {width: 40%;}
 h1 {color: #004aad;}
 
 .dropdown-menu a:hover {
+    transition: 0.2s ease;
     color: #004aad;
 }
 
@@ -30,3 +31,14 @@ h1 {color: #004aad;}
 }
 
 input[type=text]:focus, input[type=password]:focus {background-color: azure;}
+
+#forgot {
+    color: slategray;
+    text-decoration: underline slategray;
+}
+
+#forgot:hover {
+    color: #004aad;
+    text-decoration-color: #004aad;
+    transition: 0.2s ease;
+}
