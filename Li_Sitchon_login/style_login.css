@@ -4,7 +4,9 @@ body {font-family: 'Lato', sans-serif;}
 
 nav {background-color: #004aad;}
 
-nav img {width: 30%;}
+.navbar-brand {width: 30%;}
+
+#logo {width: 100%;}
 
 #navlinks a {
     color: white;
@@ -17,3 +19,14 @@ article {margin-top: 10%;}
 article > div {width: 40%;}
 
 h1 {color: #004aad;}
+
+.dropdown-menu a:hover {
+    color: #004aad;
+}
+
+.btn {
+    background-color: #004aad;
+    border-color: #004aad;
+}
+
+#logincheck {display: none;}
