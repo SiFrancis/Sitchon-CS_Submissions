@@ -18,8 +18,11 @@ nav {background-color: #004aad;}
     padding: 0 0.5rem;
 }
 
-/* Separating main body from the navbar */
-article {margin-top: 10%;}
+/* Separating main body from the navbar and footer */
+article {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
 
 /* making sure the description and login card 
    can fit beside each other */
