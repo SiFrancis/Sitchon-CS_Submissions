@@ -36,8 +36,8 @@
                             Topics
                         </a>
                         <ul class="dropdown-menu mb-3">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">A topic</a></li>
+                            <li><a class="dropdown-item" href="#">Another topic</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
@@ -54,25 +54,72 @@
     </header>
     
     <article>
-        <div class="text-center w-100 text-light p-4" style="background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('skyline.jpg') no-repeat center top; background-size: cover; ">
+
+        <div class="text-center w-100 text-light p-5" style="background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.6)), url('skyline.jpg') no-repeat center top; background-size: cover; ">
             <h1 class="text-center"><b>FOUNDATION FOR MEDIA ALTERNATIVES</b></h1>
             <p>One of the leading non-profits in the Philippines tackling online privacy, human rights, and freedom of expression.</p>
         </div>
 
         <div class="d-flex align-items-center justify-content-evenly m-4">
-            <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nostrum assumenda animi repudiandae nam tempora nemo beatae ullam quo illum rem maiores veniam, ipsam repellat doloribus ipsum. Temporibus, eaque ex.</p>
+            <ul class="w-50 mx-3 text-justify">
+                <h4><b>WHY SHOULD YOU JOIN THIS CHARITY?</b></h4>
+                <li>
+                    The FMA works to promote various human rights issues such as gender rights, privacy, and freedom of expression in a digital era. They seek to democratize information and communication technology (ICT) such as the Internet for citizens and communities in need, and have been doing so since their formation in 1987.
+                </li>
+                <li>
+                    Currently, they are focused on three main advocacies: <b>Gender and ICT</b>, <b>privacy and data protection</b>, and <b>internet rights.</b>
+                </li>
+                <li>
+                    In 2018, the FMA ran a series of workshops for university students on Internet feminism and the <a href="https://feministinternet.org/en/principles">Feminist Principles of the Internet</a>, which touch on a broad range of issues related to feminism, sexual rights, and LGBTQIA+ empowerment.
+                </li>
+                <li>
+                    The FMA also writes <a href="https://privacyinternational.org/state-privacy/1009/state-privacy-philippines">State of Privacy reports</a> that detail privacy issues in the Philippines. They also publish <a href="https://fma.ph/resources/resources-on-privacy/">various resources</a> on these privacy issues such as briefing papers and infographics.
+                </li>
+                <li>
+                    The FMA has partnered with international organizations such as Global Partners Digital and the Association for Progressive Communications on various initiatives, such as the reports and resources mentioned above. The FMA has also partnered with local Internet-focused organizations and charities to create the <a href="https://fma.ph/the-declaration/">Philippine Declaration on Internet Rights and Principles.</a>
+                </li>
+            </ul>
             <div class="card w-50">
+                <div class="card-header text-center">
+                    <h5><b>Sign up to the charity by entering the following info: </b></h5>
+                </div>
                 <div class="card-body">
                     <form>
-                        <div class="mb-3">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="firstname" placeholder="Juan" required>
                             <label for="firstname" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="firstname" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" id="lastname" placeholder="dela Cruz" required>
                             <label for="lastname" class="form-label">Last name</label>
-                            <input type="text" class="form-control" id="lastname">
                         </div>
-                        <input type="submit" value="SUBMIT">
+
+                        <p class="mb-1">Gender </p>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="gender_male" id="gender_male">
+                            <label class="form-check-label" for="gender_male">Male</label>
+                        </div> 
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="gender_female" id="gender_female">
+                            <label class="form-check-label" for="gender_female">Female</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="radio" name="gender_unspec" id="gender_unspec">
+                            <label class="form-check-label" for="gender_unspec">Prefer not to say</label>
+                        </div>
+                        
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="mail@website.com" required>
+                            <label for="email" class="form-label">Email address</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="contact_num" placeholder="123456789">
+                            <label for="contact_num" class="form-label">Contact number</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-success me-3">Submit</button>
+                        <button type="reset" class="btn btn-outline-danger">Reset</button>
                     </form>
                 </div>
             </div>
